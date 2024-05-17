@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Empresa</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif; /* Fuente de texto */
+    }
+    .contenedor-principal {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    header, footer {
+      flex-shrink: 0;
+    }
+    .imagen-aparte {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f2f2; /* Color de fondo opcional */
+    }
+    .imagen-contenedor {
+      max-width: 80%;
+      max-height: 80vh;
+      overflow: hidden;
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+    .imagen-grande {
+      width: 100%;
+      height: auto;
+      display: block; /* Eliminar margen inferior */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor-principal">
+
+    <!-- Encabezado -->
+    <header class="encabezado">
+      <div class="container">
+        <!-- Logo de la empresa -->
+        <img src="logo-hp.png" alt="Logo de Tu Empresa" class="logo">
+        <div class="titulo">
+          <nav>
+            <ul>
+              <li><a href="productos.html">Servicios</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido -->
+    <div class="imagen-aparte">
+      <div class="imagen-contenedor">
+        <img src="logo-hp.png" alt="Imagen en Grande" class="imagen-grande">
+      </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="pie-pagina">
+      <div class="container">
+        <div class="informacion-contacto">
+          <p>Dirección: Carrer de Can Ràbia, Distrito de Sarrià-Sant Gervasi, Barcelona</p>
+          <p>Teléfono: +1234567890</p>
+        </div>
+        <div class="mapa">
+          <a href="https://goo.gl/maps/direccion-de-tu-empresa" target="_blank">Ver en Google Maps</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
