@@ -38,6 +38,50 @@
       height: auto;
       display: block; /* Eliminar margen inferior */
     }
+    .informacion-empresa {
+      text-align: center;
+      padding: 20px 0;
+    }
+    .informacion-empresa h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .informacion-empresa p {
+      font-size: 18px;
+      color: #666;
+    }
+    .slogan {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .slogan h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .slogan p {
+      font-size: 16px;
+      color: #666;
+    }
+    .imagenes-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .imagen {
+      margin: 0 10px;
+      width: 200px; /* Ajustar el tamaño de las imágenes */
+    }
+    .imagen img {
+      width: 100%; /* Hacer que las imágenes ocupen todo el espacio disponible en su contenedor */
+      border-radius: 10px;
+    }
+    .imagen p {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
   </style>
 </head>
 <body>
@@ -64,7 +108,32 @@
     <!-- Contenido -->
     <div class="imagen-aparte">
       <div class="imagen-contenedor">
-        <img src="logo-hp.png" alt="Imagen en Grande" class="imagen-grande">
+        <img src="imagen-principal.jpg" alt="Imagen principal" class="imagen-grande">
+      </div>
+    </div>
+
+    <div class="informacion-empresa">
+      <h1>Bienvenido a SuperNET</h1>
+      <p>Somos líderes en soluciones tecnológicas para tu negocio. Ofrecemos una amplia gama de servicios que se adaptan a tus necesidades.</p>
+    </div>
+
+    <div class="slogan">
+      <h2>Transformando tu negocio con tecnología innovadora</h2>
+      <p>Descubre cómo nuestros servicios pueden impulsar el crecimiento y la eficiencia de tu empresa.</p>
+    </div>
+
+    <div class="imagenes-container">
+      <div class="imagen">
+        <img src="Optimización de procesos.jpg" alt="Imagen 1">
+        <p>Optimización de procesos</p>
+      </div>
+      <div class="imagen">
+        <img src="Seguridad de datos.png" alt="Imagen 2">
+        <p>Seguridad de datos</p>
+      </div>
+      <div class="imagen">
+        <img src="Soporte técnico especializado3.jpg" alt="Imagen 3">
+        <p>Soporte técnico especializado</p>
       </div>
     </div>
 

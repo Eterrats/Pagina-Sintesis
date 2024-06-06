@@ -1,380 +1,130 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Esto asegura que la página tenga al menos el alto de la ventana */
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  /* Estilos para el encabezado */
-  .encabezado {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  .encabezado .container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    max-width: 100px; /* Ajusta el tamaño del logo según lo necesites */
-    margin-right: 20px;
-  }
-  
-  .titulo {
-    flex-grow: 1; /* Para que ocupe el espacio restante */
-    display: flex;
-    justify-content: center; /* Para centrar los elementos horizontalmente */
-  }
-  
-  .titulo h1 {
-    margin: 0;
-  }
-  
-  .titulo nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-  }
-  
-  .titulo nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  .titulo nav ul li a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  /* Estilos para los enlaces */
-  a {
-    color: #333;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Estilos para las secciones */
-  .seccion {
-    background-color: #fff;
-    padding: 40px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .seccion h2 {
-    text-align: center;
-  }
-  
-  /* Estilos para el pie de página */
-  .pie-pagina {
-    background-color: #f0f0f0b3;
-    color: #000000;
-    padding: 20px 0;
-    margin-top: auto; /* Esto empuja el pie de página hacia abajo */
-    width: 100%;
-  }
-  
-  .pie-pagina .container {
-    text-align: center;
-  }
-  
-  .pie-pagina a {
-    color: #000000;
-    text-decoration: none;
-  }
-  
-  .informacion-contacto p {
-    margin: 5px 0;
-  }
-  
-  .mapa a {
-    display: block;
-    margin-top: 10px;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .encabezado {
-    background-color: #f8f8f8;
-    padding: 20px 0;
-  }
-  
-  .encabezado .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 150px;
-  }
-  
-  .titulo nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .titulo nav ul li {
-    margin-right: 20px;
-  }
-  
-  .titulo nav ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    margin-bottom: 20px;
-  }
-  
-  .contact-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .contact-form textarea {
-    resize: vertical;
-  }
-  
-  .contact-form fieldset {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .contact-form legend {
-    font-weight: bold;
-  }
-  
-  .contact-form button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .contact-form button:hover {
-    background-color: #0056b3;
-  }
-  
-  .pie-pagina {
-    background-color: #f8f8f8;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .pie-pagina .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .pie-pagina .informacion-contacto,
-  .pie-pagina .mapa {
-    margin: 0;
-  }
-  
-  .pie-pagina a {
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  .pie-pagina a:hover {
-    text-decoration: underline;
-  }
-  
-  body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
-  padding: 20px;
 }
 
+/* Estilos para el encabezado */
 .encabezado {
-  background-color: #f8f8f8;
+  background-color: #e0e6f3; /* Azul suave */
+  color: #4b4b4b; /* Gris suave */
   padding: 20px 0;
 }
 
 .encabezado .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  width: 150px;
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.titulo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo h1 {
+  margin: 0;
 }
 
 .titulo nav ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
-  display: flex;
+  text-align: center;
 }
 
 .titulo nav ul li {
+  display: inline;
   margin-right: 20px;
 }
 
 .titulo nav ul li a {
   text-decoration: none;
-  color: #333;
-  transition: color 0.3s;
+  color: #4b4b4b; /* Gris suave */
 }
 
-.titulo nav ul li a:hover {
-  color: #007bff;
-}
-
-h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  text-align: center;
+/* Estilos para los enlaces */
+a {
   color: #333;
 }
 
-h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #007bff;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  color: #666;
-  text-align: justify;
-}
-
-.pie-pagina {
-  background-color: #f8f8f8;
-  padding: 20px 0;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.pie-pagina .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.pie-pagina .informacion-contacto,
-.pie-pagina .mapa {
-  margin: 0;
-}
-
-.pie-pagina a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-.pie-pagina a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
+/* Estilos para las secciones */
+.seccion {
+  background-color: #fff;
+  padding: 40px;
+  margin-top: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+.seccion h2 {
   text-align: center;
-  color: #333;
 }
 
-h3 {
-  font-size: 22px;
+/* Estilos para el pie de página */
+.pie-pagina {
+  background-color: #e0e6f3; /* Azul suave */
+  color: #4b4b4b; /* Gris suave */
+  padding: 20px 0;
+  margin-top: auto;
+  width: 100%;
+}
+
+.pie-pagina .container {
+  text-align: center;
+}
+
+.pie-pagina a {
+  color: #4b4b4b; /* Gris suave */
+  text-decoration: none;
+}
+
+.informacion-contacto p {
+  margin: 5px 0;
+}
+
+.mapa a {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Resto de estilos con ajustes */
+.titulo nav ul li a:hover {
+  color: #007bff; /* Azul */
+}
+
+/* Estilos para los servicios */
+.servicio {
+  margin-bottom: 30px;
+}
+
+.servicio h3 {
+  font-size: 24px;
+  color: #007bff; /* Azul */
   margin-bottom: 10px;
-  color: #007bff;
 }
 
-p {
+.servicio p {
   font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 20px;
-  color: #666;
+  color: #666; /* Gris */
   text-align: justify;
 }
-
-.container p:last-child {
-  margin-bottom: 0;
-}
-
