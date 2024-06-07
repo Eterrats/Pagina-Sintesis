@@ -3,8 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios - Tu Empresa</title>
+  <title>Servicios - SuperNET</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .contenedor-principal {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    header, footer {
+      flex-shrink: 0;
+      background-color: #00ADEF;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .logo {
+      max-height: 50px;
+      display: block;
+      margin: 0 auto;
+    }
+    .titulo nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    .titulo nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+    .titulo nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .titulo nav ul li a:hover {
+      color: #ffcc00;
+    }
+    .informacion-empresa, .container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .informacion-empresa h1, .container h2 {
+      font-size: 36px;
+      color: #00ADEF;
+      margin-bottom: 10px;
+    }
+    .informacion-empresa p, .container p {
+      font-size: 18px;
+      color: #666;
+    }
+    .slogan {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .slogan h2 {
+      font-size: 24px;
+      color: #00ADEF;
+      margin-bottom: 10px;
+    }
+    .slogan p {
+      font-size: 16px;
+      color: #666;
+    }
+    .imagenes-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .imagen {
+      margin: 0 10px;
+      width: 200px;
+    }
+    .imagen img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .imagen p {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
+    .informacion-contacto, .mapa {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .informacion-contacto p, .mapa a {
+      color: #ffffff;
+    }
+    .mapa a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .mapa a:hover {
+      color: #ffcc00;
+    }
+    .servicio {
+      text-align: left;
+      padding: 20px;
+      background-color: #ffffff;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .servicio h3 {
+      font-size: 24px;
+      color: #00ADEF;
+      margin-bottom: 10px;
+    }
+    .servicio p {
+      font-size: 16px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
 
@@ -12,7 +132,7 @@
   <header class="encabezado">
     <div class="container">
       <!-- Logo de la empresa -->
-      <img src="logo-hp.png" alt="Logo de Tu Empresa" class="logo">
+      <img src="logo-hp.png" alt="Logo de SuperNET" class="logo">
       <div class="titulo">
         <nav>
           <ul>

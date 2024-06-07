@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tu Empresa</title>
+  <title>SuperNET</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     body, html {
       height: 100%;
       margin: 0;
-      font-family: Arial, sans-serif; /* Fuente de texto */
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
     }
     .contenedor-principal {
       display: flex;
@@ -18,32 +20,40 @@
     }
     header, footer {
       flex-shrink: 0;
+      background-color: #00ADEF;
+      color: #ffffff;
+      padding: 10px 0;
+      text-align: center;
     }
-    .imagen-aparte {
-      flex-grow: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f2f2f2; /* Color de fondo opcional */
+    .logo {
+      max-height: 50px;
+      display: block;
+      margin: 0 auto;
     }
-    .imagen-contenedor {
-      max-width: 80%;
-      max-height: 80vh;
-      overflow: hidden;
-      border-radius: 10px; /* Bordes redondeados */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    .titulo nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
     }
-    .imagen-grande {
-      width: 100%;
-      height: auto;
-      display: block; /* Eliminar margen inferior */
+    .titulo nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+    .titulo nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .titulo nav ul li a:hover {
+      color: #ffcc00;
     }
     .informacion-empresa {
       text-align: center;
-      padding: 20px 0;
+      padding: 40px 20px;
     }
     .informacion-empresa h1 {
       font-size: 36px;
+      color: #00ADEF;
       margin-bottom: 10px;
     }
     .informacion-empresa p {
@@ -52,11 +62,11 @@
     }
     .slogan {
       text-align: center;
-      margin-top: 20px;
+      margin: 20px 0;
     }
     .slogan h2 {
       font-size: 24px;
-      color: #333;
+      color: #00ADEF;
       margin-bottom: 10px;
     }
     .slogan p {
@@ -66,15 +76,16 @@
     .imagenes-container {
       display: flex;
       justify-content: center;
-      margin-top: 20px;
+      margin: 20px 0;
     }
     .imagen {
       margin: 0 10px;
-      width: 200px; /* Ajustar el tamaño de las imágenes */
+      width: 200px;
     }
     .imagen img {
-      width: 100%; /* Hacer que las imágenes ocupen todo el espacio disponible en su contenedor */
+      width: 100%;
       border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .imagen p {
       text-align: center;
@@ -82,7 +93,20 @@
       color: #666;
       margin-top: 5px;
     }
-
+    .informacion-contacto, .mapa {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .informacion-contacto p, .mapa a {
+      color: #ffffff;
+    }
+    .mapa a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .mapa a:hover {
+      color: #ffcc00;
+    }
   </style>
 </head>
 <body>
@@ -93,7 +117,7 @@
     <header class="encabezado">
       <div class="container">
         <!-- Logo de la empresa -->
-        <img src="logo-hp.png" alt="Logo de Tu Empresa" class="logo">
+        <img src="logo-hp.png" alt="Logo de SuperNET" class="logo">
         <div class="titulo">
           <nav>
             <ul>
@@ -107,29 +131,27 @@
     </header>
 
     <!-- Contenido -->
-
-
     <div class="informacion-empresa">
       <h1>Bienvenido a SuperNET</h1>
       <p>Somos líderes en soluciones tecnológicas para tu negocio. Ofrecemos una amplia gama de servicios que se adaptan a tus necesidades.</p>
     </div>
 
     <div class="slogan">
-      <h2>Transformando tu negocio con tecnología innovadora</h2>
+      <h2>Transforma tu negocio con tecnología innovadora</h2>
       <p>Descubre cómo nuestros servicios pueden impulsar el crecimiento y la eficiencia de tu empresa.</p>
     </div>
 
     <div class="imagenes-container">
       <div class="imagen">
-        <img src="Optimización de procesos.jpg" alt="Imagen 1">
+        <img src="Optimización de procesos.jpg" alt="Optimización de procesos">
         <p>Optimización de procesos</p>
       </div>
       <div class="imagen">
-        <img src="Seguridad de datos.png" alt="Imagen 2">
+        <img src="Seguridad de datos.png" alt="Seguridad de datos">
         <p>Seguridad de datos</p>
       </div>
       <div class="imagen">
-        <img src="Soporte técnico especializado3.jpg" alt="Imagen 3">
+        <img src="Soporte técnico especializado3.jpg" alt="Soporte técnico especializado">
         <p>Soporte técnico especializado</p>
       </div>
     </div>
