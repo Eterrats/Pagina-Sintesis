@@ -1,121 +1,76 @@
-body {
-  font-family: Arial, sans-serif;
+body, html {
+  height: 100%;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
 }
-
-header {
-  background-color: #00ADEF;
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-
-.logo {
-  max-height: 50px;
-  display: block;
-  margin: 0 auto;
-}
-
-.nav-links li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.nav-links a:hover {
-  color: #ffcc00;
-}
-
-.hero {
-  background-image: url('hero_bg.jpg');
-  background-size: cover;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.btn {
-  background-color: #00ADEF;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.products, .solutions, .services {
-  padding: 50px 20px;
-  background-color: #F2F2F2;
-}
-
-footer {
-  background-color: #00ADEF;
-  color: white;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.footer-content {
+.contenedor-principal {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
 }
-
-.footer-links ul {
+header, footer {
+  flex-shrink: 0;
+  background-color: #00ADEF;
+  color: #ffffff;
+  padding: 5px 0; /* Reducir el padding del encabezado y pie de página */
+  text-align: center;
+}
+.logo {
+  max-height: 70px; /* Aumentar el tamaño del logo */
+  display: block;
+  margin: 10px auto 0; /* Alinear el logo en el centro */
+}
+.titulo nav ul {
   list-style: none;
   padding: 0;
+  text-align: center;
+  margin-top: 10px; /* Ajustar el margen superior de las categorías */
 }
-
-.footer-links ul li {
-  margin-bottom: 10px;
+.titulo nav ul li {
+  display: inline;
+  margin: 0 20px;
 }
-
-.footer-info p {
-  margin: 0;
+.titulo nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+.titulo nav ul li a:hover {
+  color: #ffcc00;
 }
 
 .informacion-empresa {
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px;
+  flex-grow: 1;
 }
 
 .informacion-empresa h1 {
-  font-size: 36px;
+  font-size: 28px;
   color: #00ADEF;
   margin-bottom: 10px;
 }
 
 .informacion-empresa p {
-  font-size: 18px;
+  font-size: 16px;
   color: #666;
 }
 
 .slogan {
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .slogan h2 {
-  font-size: 24px;
+  font-size: 20px;
   color: #00ADEF;
   margin-bottom: 10px;
 }
 
 .slogan p {
-  font-size: 16px;
+  font-size: 14px;
   color: #666;
 }
 
@@ -132,6 +87,8 @@ footer {
 
 .imagen img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -159,35 +116,4 @@ footer {
 
 .mapa a:hover {
   color: #ffcc00;
-}
-
-.container {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.container h2 {
-  font-size: 36px;
-  color: #00ADEF;
-  margin-bottom: 20px;
-}
-
-.servicio {
-  text-align: left;
-  padding: 20px;
-  background-color: #ffffff;
-  margin: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.servicio h3 {
-  font-size: 24px;
-  color: #00ADEF;
-  margin-bottom: 10px;
-}
-
-.servicio p {
-  font-size: 16px;
-  color: #666;
 }

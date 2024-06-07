@@ -6,37 +6,39 @@
   <title>Quiénes Somos - SuperNET</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
+    body, html {
+      height: 100%;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
       background-color: #f4f4f4;
+      color: #333;
     }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
+    .contenedor-principal {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
-    .encabezado, .pie-pagina {
+    header, footer {
+      flex-shrink: 0;
       background-color: #00ADEF;
       color: #ffffff;
-      padding: 10px 0;
+      padding: 10px 0; /* Aumentar el padding del encabezado y pie de página */
+      text-align: center;
     }
     .logo {
-      max-height: 50px;
+      max-height: 70px; /* Aumentar el tamaño del logo */
       display: block;
-      margin: 0 auto;
+      margin: 10px auto 0; /* Alinear el logo en el centro */
     }
     .titulo nav ul {
       list-style: none;
       padding: 0;
       text-align: center;
+      margin-top: 10px; /* Ajustar el margen superior de las categorías */
     }
     .titulo nav ul li {
       display: inline;
-      margin: 0 15px;
+      margin: 0 20px;
     }
     .titulo nav ul li a {
       text-decoration: none;
@@ -47,13 +49,14 @@
       color: #ffcc00;
     }
     h2 {
-      color: #003366;
+      color: #00ADEF;
       text-align: center;
       margin-top: 20px;
     }
     p {
       text-align: justify;
-      margin-bottom: 20px;
+      margin: 0 auto 20px; /* Centro el texto y agrega margen inferior */
+      max-width: 800px; /* Limita el ancho del texto */
     }
     .imagen-centro {
       display: flex;
@@ -121,7 +124,8 @@
   <footer class="pie-pagina">
     <div class="container">
       <div class="informacion-contacto">
-        <p>Dirección: Carrer de Can Ràbia, Distrito de Sarrià-Sant Gervasi, Barcelona</p>
+        <p>Dirección: Carrer de Can Ràbia, Distrito de Sarrià-Sant Gervasi, Barcelona
+
         <p>Teléfono: +1234567890</p>
       </div>
       <div class="mapa">
